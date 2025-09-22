@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iPhone Auswahl</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light py-5">
+    <div class="container">
+      <div class="card shadow-sm mx-auto" style="max-width: 500px">
+        <div class="card-body">
+          <h2 class="card-title mb-4">
+            Beispielformular — Name und iPhone-Auswahl
+          </h2>
+
+          <form action="result.html" method="get" target="_blank">
+            <div class="mb-3">
+              <label for="username" class="form-label">Ihr Name</label>
+              <input
+                id="username"
+                name="username"
+                type="text"
+                class="form-control"
+                placeholder="Max"
+                required
+              />
+            </div>
+
+            <fieldset class="mb-3">
+              <legend class="col-form-label pt-0">
+                Bitte wählen Sie ein iPhone
+              </legend>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="choice"
+                  value="iPhone 15"
+                  id="iphone15"
+                  required
+                />
+                <label class="form-check-label" for="iphone15">iPhone 15</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="choice"
+                  value="iPhone 14 Pro"
+                  id="iphone14pro"
+                />
+                <label class="form-check-label" for="iphone14pro"
+                  >iPhone 14 Pro</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="choice"
+                  value="iPhone 13"
+                  id="iphone13"
+                />
+                <label class="form-check-label" for="iphone13">iPhone 13</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="choice"
+                  value="iPhone SE (2022)"
+                  id="iphonese"
+                />
+                <label class="form-check-label" for="iphonese"
+                  >iPhone SE (2022)</label
+                >
+              </div>
+            </fieldset>
+
+            <div class="mb-3">
+              <label for="color" class="form-label">Farbe auswählen</label>
+              <select id="color" name="color" class="form-select" required>
+                <option value="">-- Bitte wählen --</option>
+                <option value="Schwarz">Schwarz</option>
+                <option value="Weiß">Weiß</option>
+                <option value="Blau">Blau</option>
+                <option value="Rot">Rot</option>
+                <option value="Grün">Grün</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="storage" class="form-label">Speicherkapazität</label>
+              <select id="storage" name="storage" class="form-select" required>
+                <option value="">-- Bitte wählen --</option>
+                <option value="64GB">64GB</option>
+                <option value="128GB">128GB</option>
+                <option value="256GB">256GB</option>
+                <option value="512GB">512GB</option>
+              </select>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button type="submit" class="btn btn-primary">Absenden</button>
+              <button type="reset" class="btn btn-danger">
+                Formular zurücksetzen
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

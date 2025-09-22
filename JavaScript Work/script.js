@@ -38,11 +38,23 @@ obj.lastName = "Ivanovich";
 
 console.log(obj.lastName);
 
-a = false;
-b = 0;
+a = 10;
+b = 11;
 
 console.log(a == b);
 
+if (a > b) {
+  console.log(a);
+} else if (b > a) {
+  console.log(b);
+} else {
+  console.log(a, " + ", b);
+}
+
+function myFunc(a, b) {
+  return a + b;
+}
+console.log(myFunc(10, 12));
 // try {
 //   let result = 10 / x;
 //   console.log(result);
